@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Informācijas daudzuma kalkulators</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=dsevice-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body {
+                background-image: url(images/cipari.jpg);
+                background-repeat: repeat;
+                background-attachment: fixed;
+                margin: none;
+                
+            }
+            div.a {
+                line-height: 1;
+                font-size: 20px;
+                background-color: rgb(220 220 0);
+            }
+           
+        </style>
+
+        <script>
+            function setTwoNumberDecimal(event) {
+    this.value = parseFloat(this.value).toFixed(2);
+}
+        </script>
+    </head>
+    <body>
+        <p style="background-image: url(images/cipari.jpg);">            
+            
+        <h1>Informācijas daudzuma mērvienības</h1>
+
+
+
+        <a class="goback" href="index.html">Time management</a> <br><br>
+        <form>
+            <div class="a"><input type="text" name="gb" placeholder="Ievadiet GB skaitu">GB=</div>
+            <div class="a">‎‎‎‏‏‎ ‎</div>
+            <div class="a"><input name="pogamb" value="Izteikt megabaitos" onclick="rez1.value=gb.value*1000" type="button">
+                 <input name="rez1" class="rez1" disabled>MB</div>
+            <div class="a">‏‏‎ ‎</div>
+            <div class="a"><input name="pogamib" value="Izteikt mibibaitos" onclick="rez2.value=gb.value*10e9/1048576" type="button">
+                 <input name="rez2" class="rez2" disabled onchange="setTwoNumberDecimal" min="0" max="10" step="0.25">MiB</div>
+        </form>
+    </body>
+</html>
