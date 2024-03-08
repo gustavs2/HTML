@@ -105,6 +105,12 @@ td, th {
     margin-right: auto;
     width: 35%;
     box-shadow: 5px 8px 12px lightcoral;
+    transition-duration: 0.3s;
+  }
+
+  .center:hover{
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 
   }
 
@@ -197,4 +203,13 @@ td, th {
   border-radius: 10px;
   margin-left: none;
   border: #2f4fdc 5px solid;
+  }
+
+  .stress, .clock, .business {
+    transition-duration: 0.3s;
+
+  }
+
+  .stress:hover, .clock:hover, .business:hover{
+    transform: scale(2.5);
   }
