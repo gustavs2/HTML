@@ -5,7 +5,7 @@
         <title>Informācijas daudzuma kalkulators</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=dsevice-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css"> 
         <style>
             body {
                 background-image: url(images/cipari.jpg);
@@ -46,4 +46,55 @@
                  <input name="rez2" class="rez2" disabled onchange="setTwoNumberDecimal" min="0" max="10" step="0.25">MiB</div>
         </form>
     </body>
-</html>
+</html>  
+
+
+
+
+
+<!-- 
+
+    Test code, perhaps a usable version if the formatting above is too much. However, it is important to be careful as there are tags below which appear in the css stylesheet file.
+
+-->
+
+<!-- <!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Informācijas daudzuma kalkulators</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=dsevice-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body {
+                background-image: url(images/cipari.jpg);
+                background: repeat;
+            }
+            div.a {
+                line-height: 1;
+                font-size: 20px;
+                background-color: rgb(220 220 0);
+            }
+            input[type=text],  input[type=text]:hover,  input[type=text]:focus {
+                background-color: white;
+                border: 1px solid black;
+                text-decoration: none;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <p style="background-image: url(images/cipari.jpg);">
+        <h1>Informācijas daudzuma mērvienības</h1>
+        <form>
+            <div class="a"><input type="text" name="gb">GB=</div>
+            <div class="a">‎‎‎‏‏‎ ‎</div>
+            <div class="a"><input name="pogamb" value="Izteikt megabaitos" onclick="rez1.value=gb.value*1000" type="button">
+                 <input name="rez1">MB</div>
+            <div class="a">‏‏‎ ‎</div>
+            <div class="a"><input name="pogamib" value="Izteikt mibibaitos" onclick="rez2.value=gb.value*10e9/1048576" type="button">
+                 <input name="rez2">MiB</div>
+        </form>
+    </body>
+</html> -->

@@ -132,7 +132,7 @@ td, th {
     font-weight: bold;
   }
  
- /* style mērvienībām */
+ /* style mērvienībām    // COMMENT OUT IF FORMATTING IS NOT NEEDED (COMMENT UNTIL THE BIG GAP) */
 
  input[type=button] {
   background-color: #556cd2;
@@ -188,6 +188,13 @@ td, th {
   color: black;
   width: fit-content;
  }
+
+
+
+
+ /* DO NOT COMMENT OUT  */
+
+
 
  .goback{
   background-color: #0d31d3;
